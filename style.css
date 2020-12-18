@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* 메인 컨텐츠 */
+.slider-contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.slider-contents-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* 버튼 CSS */
+.slider-btns {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.slider-btns > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0);
+}
+.slider-btns > button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+}
+.slider-btns i {
+  padding: 0 10px;
+}
+
+/* nav-dots */
+.nav-dots {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.dot {
+  display: block;
+  background-color: white;
+  opacity: 60%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.highlight {
+  opacity: 1;
+}
